@@ -3,18 +3,19 @@ package com.lts.app;
 import java.rmi.server.UID;
 
 public class TrygState {
-    
 
     /* Constructor */
-TrygState(
-    stateUid =UID();
-)
+    TrygState() {
+        stateUID = new UID();
+    }
 
-    private UID stateUid;
+    private UID stateUID;
 
-    public UID getUID()
-    {
+    public UID getUID() {
         return stateUID;
     }
-    
+
+    public String toString() {
+        return stateUID.toString();
+    }
 }
